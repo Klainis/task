@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ans</title>
+</head>
+<body>
+<div id="answer">
+    <p>{{ user.first_name }} {{user.last_name}}</p>
+    <p>{{ user.email }}</p>
+    <p>Возраст: {{ user.age }}</p>
+    <ul>
+        {% for skill in skills %}
+        <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>
